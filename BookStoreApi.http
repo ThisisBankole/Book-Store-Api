@@ -1,0 +1,20 @@
+@BookStoreApi_HostAddress = http://localhost:5058
+
+GET {{BookStoreApi_HostAddress}}/api/book
+Accept: application/json
+
+###
+
+@BookStoreApi_HostAddress = http://localhost:5058
+POST {{BookStoreApi_HostAddress}}/api/book
+Content-Type: application/json
+Accept: application/json
+
+{
+  "title": "The Great Gatsby",
+  "author": "F. Scott Fitzgerald",
+  "category": "Fiction",
+  "price": 7.99
+}
+
+###
